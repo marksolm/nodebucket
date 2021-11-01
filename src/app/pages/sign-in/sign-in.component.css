@@ -1,0 +1,74 @@
+/*
+=============================================================
+; Title:  sign-in.component.css
+; Author: Soliman Elmalak
+; Date:     Date 29 October 2021
+; Description: Styling for sign-in.component.html
+=============================================================
+*/
+
+/* signin-container width and margin */
+.signin-container {
+    width: 50%;
+    margin: 15% auto;
+ }
+  /* text-align style for  a mat-card-title  */
+  .mat-card-title {
+    text-align: center;
+  }
+ 
+  /* This is msg-error and mat-error styling */
+  .msg-error mat-error{
+    color: #ffffff;
+    background-color: #ffffff;
+    padding: 12px;
+    margin: 10px 0px;
+    font-size: 22px;
+  }
+
+  /* This is styling for the form card */
+  .mat-elevation-z8{
+    background-color: #663043;
+    color: #ffffff;
+  }
+
+  /* mat-error and mat-card-subtitle styling */
+   mat-error, mat-card-subtitle
+  {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bolder;
+  }
+  
+
+/* input field styling */
+input {
+  font-size: 18px;
+  height: 40px;
+  color:  black;
+  background-color: #ffffff;
+}
+  
+/* This is a setup for sign-in button */
+button{
+  background-color: #b0e2ff;
+  color: black;
+  font-size: 26px;
+  font-weight: bolder;;
+}
+
+/* This is a styling for signin page title */
+.main-label{
+  margin-top: 150px;
+  margin-bottom: -200px;
+  font-size: 62px;
+  text-align: center;
+  color: #00008b;
+
+}
+
+/* Styling for mat-card color and border-style */
+mat-card{
+  border-style: solid;
+  color: black;
+}

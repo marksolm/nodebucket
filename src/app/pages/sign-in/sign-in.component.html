@@ -1,0 +1,48 @@
+<!--
+=============================================================
+; Title:  sign-in.component.html
+; Author: Soliman Elmalak
+; Date: Date 27 October 2021
+; Description: HTML for the sign-in.component
+=============================================================
+-->
+
+<!-- Create a form for sign-in use -->
+<div class="border-styling" fxLayout="column">
+  <div class="main-label">
+     NodeBucket Task Management
+  </div>
+  <mat-card fxFlex class="mat-elevation-z8 signin-container">
+    <br /><br />
+
+     <!--Set the mat-card-title to employee Sign In-->
+    <mat-card-title style="font-size: 36px;">Employee Sign In </mat-card-title>
+    <br /> <br /> <br /><br />
+     <!--Set the mat-card-subtitle to “You must enter a valid employee ID to proceed.”-->
+    <mat-card-subtitle>You must enter a valid employee ID to continue</mat-card-subtitle>
+
+    <!-- Sign-in form -->
+    <form [formGroup]="form" (ngSubmit)="login(); form.reset()">
+      <mat-card-content>
+        <mat-form-field fxFlex appearance="outline">
+            <input matInput
+            [formControl]="form.controls['empId']"
+            placeholder="Employee ID"/>
+            <!-- Validation/ error -->
+          <mat-error *ngIf="form.controls['empId'].hasError('required') && form.controls['empId'].touched">
+            Employee ID is a required field.
+          </mat-error>
+          <mat-error *ngIf="form.controls['empId'].hasError('pattern') && form.controls['empId'].touched">
+            Employee ID must be a numerical value.
+          </mat-error>
+          <mat-error *ngIf="error">{{ error }}</mat-error>
+        </mat-form-field>
+      </mat-card-content>
+      <mat-card-actions algin="end">
+        <br /> <br />
+          <!-- Disable the Sign-in button until an Employee ID is entered in the field -->
+          <button type="submit" fxFlex mat-raised-button  [disabled]="!form.valid">Sign-in</button>
+    </mat-card-actions>
+</form>
+  </mat-card>
+</div>

@@ -1,3 +1,12 @@
+/*
+============================================
+; Title:  app.component.ts
+; Author: Soliman Elmalak
+; Date:   27 October 2021
+; Description: app.component
+============================================
+*/
+
 import { Component } from '@angular/core';
 
 @Component({

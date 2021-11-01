@@ -1,7 +1,7 @@
 .logo {
     margin-left: 75px;
     font-size: 24px;
-    font-weight: lighter;;
+    font-weight: bolder;;
   }
   
   .navbar-container {
@@ -10,13 +10,22 @@
   
   .navbar-link {
     font-size: 24px;
-    font-weight: lighter;
+    font-weight: bolder;
   }
   
   .main-content {
     padding-left: 30px;
   }
   
+  /*
+=============================================================
+; Title:  base-layout.component.css
+; Author: Soliman Elmalak
+; Date:     Date 29 October 2021
+; Description: Styling for base-layout.component.html
+=============================================================
+*/
+
   .footer {
     bottom: 0;
     position: absolute;
@@ -24,10 +33,10 @@
   }
   
   .footer-content {
-    font-size: 16px;
-    font-weight: lighter;
-    padding-left: 100px;
+    font-size: 20px;
+    font-weight: bolder;
     letter-spacing: 3px;
+    padding-left: 40%;
   }
   
   .bu-link {
