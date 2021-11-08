@@ -7,7 +7,7 @@
 =============================================================
 -->
 
-<div fxLayout="column">
+<div class="container" fxLayout="column">
     <!-- navigation -->
     <nav fxFlex>
       <mat-toolbar>
@@ -18,11 +18,22 @@
 
           <button class="navbar-link" routerLink="/about" mat-button>About Us</button>
           <button class="navbar-link" routerLink="/contact" mat-button>Contact</button>
-          <!-- Add a Sign-Out Button-->
-          <button class="navbar-link" mat-button (click)="signOut()">Sign Out</button>
-
         </div>
-  
+        <!-- Add a Sign-Out profile menu -->
+        <div class="profile-menu" *ngIf="isLoggedIn">
+          <button mat-icon-button [matMenuTriggerFor]="profileMenu" aria-label="user profile menu">
+            <mat-icon>perm_identity</mat-icon>
+          </button>
+
+            <mat-menu #profileMenu>
+              <p style="padding: 10px">Signed in as {{ name }}</p>
+              <mat-divider></mat-divider>
+              <button mat-menu-item (click)="signOut()">
+                <mat-icon>logout</mat-icon>
+                <span>Sign out</span>
+              </button>
+            </mat-menu>
+        </div>
       </mat-toolbar>
     </nav>
   
@@ -32,17 +43,17 @@
         <router-outlet></router-outlet>
       </main>
     </div>
-  
+
     <!-- footer -->
     <div fxFlex>
       <footer class="footer">
         <mat-toolbar class="footer-content">
           <p>
-            &copy; {{year | date: 'yyyy'}} - nodebucket - <a href="https://www.bellevue.edu/" class="bu-link" target="_blank">Bellevue University</a>
+            &copy; {{year | date: 'yyyy'}} - nodebucket - <a href="https://www.MJT Web Technology.com/" class="bu-link" target="_blank">MJT Web Technology</a>
           </p>
         </mat-toolbar>
       </footer>
     </div>
   
-  </div>
+</div>
   

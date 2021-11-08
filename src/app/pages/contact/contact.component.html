@@ -1,1 +1,82 @@
-<p>contact works!</p>
+<!--
+=============================================================
+; Title:  contact.component.html
+; Author: Professor Krasso
+; Date:   05 November 2021
+; Modified By: Soliman Elmalak
+; Description: contact.component 
+=============================================================
+-->
+
+
+<!-- Main div and align-center class. -->
+<div class="align-center contact-container">
+    <!-- breaks. -->
+    <br />   <br />   <br />    <br />   
+    <div class="row">
+        <div class="col-sm-12">
+          <h3 class="main-header">SDA NodeBucket Task Management</h3>
+        </div>
+    </div>
+    
+      <br /><br /><br /><br /><br />
+  
+      <!-- Create the layout for the contact page. -->
+      <div fxLayout="row wrap">
+        <!-- Layout for the Mailing Address Column -->
+        <div fxFlex>
+            <!-- mat-card-title and mat-icon for address-->
+            <mat-card-title class="card-title-icon">
+              <br /> 
+                <mat-icon>navigation</mat-icon>
+                <br /> <br />  
+            </mat-card-title>
+            <mat-card-content class="align-center">
+              <p>
+                2620 2nd st, 
+              </p>
+              <p>
+                Philadelphia, PA 19103
+              </p>
+            </mat-card-content>
+        </div>
+        <div fxFlex>
+            <!-- mat-card-title and mat-icon for phone-->
+            <mat-card-title class="card-title-icon">
+              <br />
+                <mat-icon >phone</mat-icon>
+            </mat-card-title>
+            <br />
+            <mat-card-content class="align-center">
+              <br />
+  
+              <p>
+                Direct: 555-555-5555
+              </p>
+              <p>
+                Toll-free: 1-800-555-5555
+              </p>
+              <p>
+                Fax: 555-555-5556
+              </p>
+            </mat-card-content>
+        </div>
+        <br /><br />            
+
+        <div fxFlex>
+             <!-- mat-card-title and mat-icon for email-->
+            <mat-card-title class="card-title-icon">
+              <br /> <br />
+              <mat-icon  inline=true>email</mat-icon>
+            </mat-card-title>
+             <br /><br />                                  
+            <mat-card-content class="align-center">
+                <p>
+                    SDA.NodeBucket.@comcast.net
+                </p>
+            </mat-card-content>
+        </div>
+    </div>
+        <!-- A comment at the bottom of the page -->
+      <hr />
+</div>

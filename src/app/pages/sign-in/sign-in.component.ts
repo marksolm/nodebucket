@@ -41,7 +41,9 @@ export class SignInComponent implements OnInit {
     // Get the empId from the employees collection on MongoDB
     this.http.get('/api/employees/' + empId).subscribe(res => {
       if (res) {
-        // Set the empId as the session_user and navigate to the home screen if the ID is valid
+        console.log(res);
+        // Add first name and last name to session storage
+        sessionStorage.setItem('name',`${res['firstName']} ${res['lastName']}`);
         this.cookieService.set('session_user', empId, 1);
         this.router.navigate(['/']);
       } else {

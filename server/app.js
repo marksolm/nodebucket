@@ -14,7 +14,6 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');                        
 const path = require('path');
 const mongoose = require('mongoose');
-const Employee = require("./models/employee");
 const EmployeeApi = require('./routes/employee-api');
 
 /**
@@ -56,7 +55,7 @@ mongoose.connect(conn, {
  */
  
  app.use('/api/employees', EmployeeApi);
-
+// localhost:3000/api/employees 
 
 
 /**

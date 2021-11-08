@@ -1,0 +1,38 @@
+/**
+=============================================================
+; Title:  contact.component.css
+; Author: Professor Krasso
+; Date:   05 November 2021
+; Modified By: Soliman Elmalak
+; Description: styling for  contact.component.html
+; =============================================================
+*/
+
+/*align-center styling*/
+.align-center {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  
+  
+  .main-header {
+    font-size: 52px;
+    color: #00008b;
+  }
+  
+  .contact-container {
+    width: 100%;
+    padding-top: 50px;
+  }
+
+ 
+  .card-title-icon, .mat-icon {
+    font-size: 102px;
+    color: #663043;
+  }
+  
+  .mat-card-content{
+    color:#a1045a
+ 
+  }

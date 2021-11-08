@@ -1,3 +1,12 @@
+/*
+=============================================================
+; Title:  contact.component.ts
+; Author: Soliman Elmalak
+; Date: 05 November 2021
+; Description: contact component
+=============================================================
+*/
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({

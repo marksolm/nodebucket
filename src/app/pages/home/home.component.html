@@ -1,9 +1,82 @@
+<!--
+  Title: home.component.html
+  Author: Soliman Abdelmalak
+  Date 02 November 2021
+  Description: HTML for the home.component of nodebucket.
+-->
+
+
 <div fxLayout="column" class="main-welcome">
+  <div FxFlex>
     <h1 class="title">
-      Welcome to WEB 450's - nodebucket Project <br />
+      SDA NodeBucket Task Management
+      <br />
       <span class="subtitle">
-        Pay close attention to the requirements, double and triple check the files for code attribution, and do not wait unitl the last minute to begin working on each item.
+        Adding, Tracking, Editing, Deleting, and Rearranging Tasks.
       </span>
     </h1>
   </div>
-  
+
+<div fxFlex>
+
+  <!-- Create the button for the user to click to create a new task -->
+  <div class="task-container" fxLayout="column">
+    <button mat-raised-button  (click)="openCreateTaskDialog()">Create Task</button>
+  </div>
+</div>
+
+<!-- Create a box for both Task Lists -->
+<div fxFlex>
+  <div fxLayout="row" fxLayoutGap="15px" class="task-container">
+    <!-- Create a box for the To Do List -->
+    <div fxFlex>
+      <mat-card class="mat-elevation-z0">
+        <mat-card-title>ToDo</mat-card-title>
+
+        <mat-card-content>
+          <div class="task-column">
+
+            <!-- ng loop to collect all To Do tasks on the database and output to the To Do List-->
+            <div *ngFor="let item of todo">
+              <mat-card  class="mat-elevation-z0 task-card">
+                <mat-card-content>
+                  <div fxLayout="row">
+                    <div fxFlex>
+                      {{ item.text }}
+                    </div>
+
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+   
+    <!-- Create a box for the Done List -->
+    <div fxFlex>
+      <mat-card class="mat-elevation-z0">
+        <mat-card-title>Done</mat-card-title>
+
+        <mat-card-content>
+          <div class="task-column">
+
+            <!-- ng loop to collect all Done tasks on the database and output to the Done List-->
+            <div *ngFor="let item of done">
+              <mat-card  class="mat-elevation-z0 task-card">
+                  <div fxLayout="row">
+                    <div fxFlex>
+                      {{ item.text }}
+                    </div>
+
+                  </div>
+              </mat-card>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+ </div>
+</div>

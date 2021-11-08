@@ -28,6 +28,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SignInComponent } from './pages/sign-in/sign-in.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { CreateTaskDialogComponent } from './shared/create-task-dialog/create-task-dialog.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatDividerModule } from '@angular/material/divider';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
@@ -37,7 +43,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     AuthLayoutComponent,
     SignInComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    CreateTaskDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -50,9 +57,13 @@ import { ContactComponent } from './pages/contact/contact.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    MatCardModule,
     MatFormFieldModule,
     MatInputModule,
+    MatMenuModule,
+    MatDialogModule,
+    MatDividerModule,
+    DragDropModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
