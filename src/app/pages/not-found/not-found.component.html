@@ -1,0 +1,25 @@
+<!--
+=============================================================
+; Title:  not-found.component.html
+; Author: Soliman Elmalak
+; Date: 10 November 2021
+; Description: HTML for the not-found component
+=============================================================
+-->
+
+
+<div flexLayout="column" class="not-found" gdAlignRows="center">
+     <!-- Notify the user of the error -->
+    <div fxLayout="row" gdAlignRows="center">
+        <h1 class="statusCode">404</h1>
+    </div>
+    <h1 gdAlignRows="center"> Whoops!</h1>
+    <h2 gdAlignRows="center">  Page not found!</h2>
+    <br>
+    <div fxLayout="row" gdAlignRows="center"><img src="../../../assets/not-found.jpeg"  width="700px" height="505px"></div>
+    <br>
+    <!-- Create the button for the user to click to reload the home page -->
+    <div fxLayout="row" gdAlignRows="center"><button color="primary" mat-raised-button routerLink="/">Return to Home Page</button></div>
+    
+</div>
+

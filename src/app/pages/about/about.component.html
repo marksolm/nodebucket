@@ -1,1 +1,77 @@
-<p>about works!</p>
+<!--
+=============================================================
+; Title:  about.component.html
+; Author: Soliman Elmalak
+; Date: 11 November 2021
+; Description: HTML for the about.component.html
+=============================================================
+-->
+
+<div class="about-us">
+    <div class="row">
+        <div class="col-sm-12">
+          <!-- Page Title -->
+          <h3 class="main-header">SDA NodeBucket Task Management</h3>
+        </div>
+    </div>
+      <br /><br /><br />
+    <div class="about-text">
+        <!-- mat-card and About NodeBucket text info -->
+        <mat-card >
+            <mat-card-content >
+                <br>
+                <h2>
+                    NodeBucket is a task management software created by SDA company to manage and organize tasks for its employees. It is designed to simplify the way for the employees to access the required tasks. It allows each employee to log in under his/her employee Id and edit, add, delete, and track tasks under the To-do list. Secure login and database access allows employees to secure their information, and it enables them to access their data when they need it. Nodebucket allows a logged-in employee to drag a task around and move it to the Done column when that task is completed. That is a great way to confirm managers if the tasks are done, or not. Also, Nodebucket enables the database admin full access to Find their employees by ID, find all tasks, create a task, update tasks, and delete tasks for his/her staff members.
+
+                </h2>
+                <h2>
+
+                    NodeBucket will enable SDA employees to coordinate with coworker partners on a big project, dividing it up into smaller tasks to make the workflow easier. By breaking down every part of your project into detailed tasks, it will give each employee a better view of how he/she is going to complete tasks. Nodebucket is the way to ensure the project tasks run smoothly from start to finish by tracking the tasks from beginning to end, delegating subtasks to team members, managing time, and meeting deadlines. If you have any questions regarding how to use the NodeBucket app, please talk to one of our management team members.
+                </h2>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <br> <br>    <br> <br>
+    
+    <!-- image Title -->
+    <div>                
+        <p class="imageTitle"> Meet Our Management Team</p>
+    </div>
+    <div >
+      <!-- Create the layout for the first row images. -->
+        <div fxLayout="row wrap"  class="about-images">
+        
+            <div fxFlex>
+                <figure>
+                    <img src='/assets/david.jpg' width="300" height="400">
+                     <figcaption>David</figcaption>
+                </figure>
+            </div>
+            
+            <div fxFlex>
+                <figure>
+                    <img src='/assets/Soliman.jpg' width="300" height="400">
+                     <figcaption>Soliman</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- Create the layout for the second row images. -->
+        <div fxLayout="row wrap"  class="about-images">
+
+            <div fxFlex>
+                <figure>
+                    <img src='/assets/Jacoub.jpg' width="300" height="400">
+                     <figcaption>Mark</figcaption>
+                </figure>
+            </div>
+
+            <div fxFlex>
+                <figure>
+                    <img src='/assets/Jonah.jpg' width="300" height="400">
+                     <figcaption>Jonah</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>

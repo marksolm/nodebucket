@@ -1,0 +1,60 @@
+/**
+=============================================================
+; Title:  about.component.css
+; Author: Professor Krasso
+; Date:   11 November 2021
+; Description: styling for  about.component.html
+; =============================================================
+*/
+
+/* This is the top header styling*/
+.main-header {
+  font-size: 42px;
+  color: #00008b;
+  text-align: center;
+}
+ 
+/* This is the image header styling*/
+.imageTitle{
+   font-size: 40px;
+    font-family: 'Special Elite', cursive;
+    text-align: center;
+    color: #00008b;
+  }
+
+/* This is a styling for about-us main container */
+.about-us{
+  width: 100%;
+  padding-top: 50px;
+}
+
+ /* text content styling */
+ .about-text {
+  margin:  auto;
+  width: 80%;
+  margin-bottom: .05%;
+}
+
+ /* p font-size and padding styling */
+.p{
+  font-size: 20px;
+  padding: 20px;    
+}
+
+/* about-text and mat-card styling */
+.about-text mat-card{
+  background-color:  rgba(255, 255, 232, 0.22);
+}
+
+/* images div styling*/
+.about-images{
+  margin: 1%;
+  margin-bottom: 5%;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* h2  font-size styling*/
+h2{
+  font-size: 1.3em;
+}

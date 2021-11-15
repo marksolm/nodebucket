@@ -34,6 +34,9 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatDividerModule } from '@angular/material/divider';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { CookieService } from 'ngx-cookie-service';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { CommonModule } from '@angular/common';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -44,7 +47,8 @@ import { CookieService } from 'ngx-cookie-service';
     SignInComponent,
     AboutComponent,
     ContactComponent,
-    CreateTaskDialogComponent
+    CreateTaskDialogComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +67,11 @@ import { CookieService } from 'ngx-cookie-service';
     MatDialogModule,
     MatDividerModule,
     DragDropModule,
-    MatCardModule
+    MatCardModule,
+    CommonModule,
+    MatGridListModule,
+    MatDividerModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

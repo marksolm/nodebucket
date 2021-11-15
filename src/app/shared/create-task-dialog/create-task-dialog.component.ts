@@ -28,6 +28,7 @@ export class CreateTaskDialogComponent implements OnInit {
       text: [null, Validators.compose([Validators.required])]
     })
   }
+  
   // create a new task
   createTask() {
     this.dialogRef.close(this.taskForm.value);

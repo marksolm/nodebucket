@@ -1,0 +1,34 @@
+/**
+=============================================================
+; Title:  not-found.component.css
+; Author: Professor Krasso
+; Date:   10 November 2021
+; Modified By: Soliman Elmalak
+; Description: styling for  not-found.component.html
+; =============================================================
+*/
+
+/* h1 styling for the color and the font size */
+h1 {
+    line-height: 100%;
+    color: red;
+    font-size: 3.1em;
+}
+
+/* h2  font styling */
+h2{
+    font-size: 1.9em;
+}
+
+/* This is a styling for 404 status code */
+  .statusCode {
+    font-size: 1000%;
+    text-align: center;
+    padding-top: 45px;
+  }
+  /*   /* This is a styling for Return home button to reloaded the home page*/
+ */
+
+ button{
+     font-size: 1.9em;
+ }

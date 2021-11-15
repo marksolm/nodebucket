@@ -15,23 +15,26 @@
     font-weight: bold;
   }
   
-  
+/*main-header font-size and color styling*/
   .main-header {
-    font-size: 52px;
+    font-size: 42px;
     color: #00008b;
   }
   
+  /*contact-container styling*/
   .contact-container {
     width: 100%;
-    padding-top: 50px;
+    padding-top: 30px;
   }
 
- 
+ /*card-title-icon and mat-icon styling*/
   .card-title-icon, .mat-icon {
     font-size: 102px;
     color: #663043;
   }
   
+  /*mat-card-content styling*/
+
   .mat-card-content{
     color:#a1045a
  
