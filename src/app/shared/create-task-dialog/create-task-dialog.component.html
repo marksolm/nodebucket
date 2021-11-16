@@ -4,11 +4,12 @@
   Date 02 November 2021
   Description: HTML for the create-task-dialog.component of nodebucket.
 -->
-<div class dialog-form>
+
+<div class="dialog-container" dialog-form>
     <!-- Creates the form to add a new task -->
     <h2 mat-dialog-title>Add new task</h2>
     <mat-dialog-content [formGroup]="taskForm">
-      <mat-form-field style="width: 200px;">
+      <mat-form-field style="width: 380px;">
         <input type="text" placeholder="Enter a task name" matInput formControlName="text" (keydown.enter)="createTask()"/>
       </mat-form-field>
     </mat-dialog-content>

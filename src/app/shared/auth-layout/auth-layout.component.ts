@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  sign-in.component.ts
+; Title:  auth-layout.component.ts
 ; Author: Soliman Elmalak
 ; Date:   27 October 2021
 ; Description: auth-layout.component.ts

@@ -7,6 +7,7 @@
 ============================================
 */
 
+// Export interface SessionUser 
 export interface SessionUser {
     empId: string;
     firstName: string;

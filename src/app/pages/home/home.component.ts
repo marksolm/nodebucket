@@ -61,6 +61,8 @@ export class HomeComponent implements OnInit {
   // Create a new task
   openCreateTaskDialog() {
     const dialogRef = this.dialog.open(CreateTaskDialogComponent, {
+      height: '250px',
+      width: "500px",
       disableClose: true
     })
 

@@ -7,6 +7,7 @@
 ============================================
 */
 
+/* Import required modules from Angular */
 import { Component } from '@angular/core';
 
 @Component({

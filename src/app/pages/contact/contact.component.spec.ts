@@ -7,6 +7,8 @@
 =============================================================
 */
 
+
+/* Import required component and modules from Angular */
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ContactComponent } from './contact.component';

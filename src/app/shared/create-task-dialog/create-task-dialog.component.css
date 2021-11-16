@@ -1,0 +1,28 @@
+/*
+=============================================================
+; Title:  create-task-dialog.component.css
+; Author: Soliman Elmalak
+; Date:     Date 29 October 2021
+; Description: create-task-dialog.component.html
+=============================================================
+*/
+
+
+/* h2 styling for the font-size and the text-align */
+h2 {
+ font-size: 1.5em;
+ text-align: center;
+}
+
+/* mat-dialog-content styling for the font-size */
+
+mat-dialog-content{
+    font-size: 1.2em;
+}
+
+/* mat-form-field styling for the font-size */
+
+mat-form-field{
+    font-size: 1.0em;
+
+}

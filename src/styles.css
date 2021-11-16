@@ -1,12 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+=============================================================
+; Title:  styles.css
+; Author: Soliman Elmalak
+; Date:     Date 29 October 2021
+; Description: Styling for nodebucket app
+=============================================================
+*/
 
-
-
-html, body {
+  /* styling for html and body*/
+  html, body {
     height: 100%;
     font-size: xx-large;
     background-color: #b0e2ff;
-    
     
 
   }

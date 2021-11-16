@@ -7,8 +7,8 @@
 ; Description: base-layout.component
 ============================================
 */
-/* Add an import statement  */
 
+/* Add an import statement  */
 import { Component, OnInit } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
 import { Router } from '@angular/router';

@@ -7,6 +7,7 @@
 ============================================
 */
 
+/* Import required modules from Angular */
 import { HomeComponent } from './pages/home/home.component';
 import { BaseLayoutComponent } from './shared/base-layout/base-layout.component';
 import { NgModule } from '@angular/core';
@@ -18,6 +19,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
+/* configure routes*/ 
 const routes: Routes = [
   {
     path: '',
@@ -70,6 +72,3 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-
-
-

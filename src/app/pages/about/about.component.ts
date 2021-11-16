@@ -7,6 +7,7 @@
 =============================================================
 */
 
+/* Import required modules from Angular */
 import { Component, OnInit } from '@angular/core';
 import { MatGridListModule } from '@angular/material/grid-list';
 
