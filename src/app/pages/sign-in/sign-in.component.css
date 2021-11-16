@@ -9,12 +9,14 @@
 
 /* signin-container width and margin */
 .signin-container {
-    width: 30%;
+    width: 45%;
     margin: 15% auto;
  }
   /* text-align style for  a mat-card-title  */
   .mat-card-title {
     text-align: center;
+    font-size: 27px;
+    font-weight:lighter ;
   }
  
   /* This is msg-error and mat-error styling */
@@ -22,8 +24,8 @@
     color: #ffffff;
     background-color: #ffffff;
     padding: 12px;
-    margin: 10px 0px;
-    font-size: 22px;
+    margin: 10px 10px;
+    font-size: 16px;
   }
 
   /* This is styling for the form card background color and text color */
@@ -36,14 +38,14 @@
    mat-error, mat-card-subtitle
   {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: bolder;
   }
   
 
 /* input field styling */
 input {
-  font-size: 18px;
+  font-size: 15px;
   height: 40px;
   color:  black;
   background-color: #ffffff;
@@ -53,7 +55,7 @@ input {
 button{
   background-color: #b0e2ff;
   color: black;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: bolder;;
 }
 
@@ -61,7 +63,7 @@ button{
 .main-label{
   margin-top: 60px;
   margin-bottom: -200px;
-  font-size: 40px;
+  font-size: 34px;
   text-align: center;
   color: #00008b;
   padding-bottom: 50px;

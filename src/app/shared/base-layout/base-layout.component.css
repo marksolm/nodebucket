@@ -15,7 +15,7 @@
   
   /* This is a set up for the navbar-link buttons  */
   .navbar-link {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bolder;
   }
   
@@ -34,10 +34,10 @@
 
     /* Styling for the footer-content  */
   .footer-content {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bolder;
     letter-spacing: 3px;
-    padding-left: 40%;
+    padding-left: 200px;
   }
 
 /* This is a styling for the footer */
@@ -51,26 +51,20 @@
    
 /* This is a styling for sign out profile-menu  icon */
   .mat-icon {
-    font-size: 50px;
+    font-size: 35px;
     color: #663043;
   }
   
-  /* This is a styling for sign out profile-menu */
-  .profile-menu {
-    font-size: 50px;
-    padding-left:800px;
-  }
-
+ 
   
-/* coming soon for logo styling */
-.logo {
-  margin-left: 75px;
-  font-size: 24px;
-  font-weight: bolder;;
-}
 
  /* page-container position and min-height styling  */
 .page-container {
-  position: relative;
-  min-height: 100vh
+  position: absolute;
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+.profile-menu{
+  padding-left: 500px;
 }

@@ -11,13 +11,12 @@
 /*align-center styling*/
 .align-center {
     text-align: center;
-    font-size: 1.3em;
-    font-weight: bold;
+    font-weight: bolder;
   }
   
 /*main-header font-size and color styling*/
   .main-header {
-    font-size: 42px;
+    font-size: 31px;
     color: #00008b;
   }
   
