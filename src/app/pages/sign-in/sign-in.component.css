@@ -47,6 +47,8 @@
 input {
   font-size: 15px;
   height: 40px;
+  max-width: 75%;
+
   color:  black;
   background-color: #ffffff;
 }
@@ -63,7 +65,7 @@ button{
 .main-label{
   margin-top: 60px;
   margin-bottom: -200px;
-  font-size: 34px;
+  font-size: 28px;
   text-align: center;
   color: #00008b;
   padding-bottom: 50px;

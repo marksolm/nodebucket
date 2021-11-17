@@ -16,7 +16,7 @@
   
 /*main-header font-size and color styling*/
   .main-header {
-    font-size: 31px;
+    font-size: 28px;
     color: #00008b;
   }
   
@@ -28,13 +28,15 @@
 
  /*card-title-icon and mat-icon styling*/
   .card-title-icon, .mat-icon {
-    font-size: 102px;
+    font-size: 52px;
     color: #663043;
+    margin-bottom:10px;
   }
   
   /*mat-card-content styling*/
 
   .mat-card-content{
-    color:#a1045a
- 
+    color:#31282d;
+    font-size:14px;
   }
+ 
