@@ -16,20 +16,22 @@
   /* This is a set up for the navbar-link buttons  */
   .navbar-link {
     font-size: 18px;
-    font-weight: bolder;
+    color: #663043;
+
   }
   
   /* This is a set up for the footer bottom, position, and width  */
   .main-content {
     padding-left: 30px;
+    width: 100%;
+
   }
 
    /* This is a set up for the footer bottom, position, and width  */
   .footer {
-    position: relative;
     bottom: 0;
     width: 100%;
-    height: 2.5rem;    
+    height: 2.5rem;  
  }   
 
     /* Styling for the footer-content  */
@@ -37,7 +39,7 @@
     font-size: 18px;
     font-weight: bolder;
     letter-spacing: 3px;
-    padding-left: 200px;
+    padding-left: 4%;
   }
 
 /* This is a styling for the footer */
@@ -49,22 +51,13 @@
     text-decoration: underline;
   }
    
-/* This is a styling for sign out profile-menu  icon */
+/* This is a styling for sign out profile-menu icon */
   .mat-icon {
     font-size: 35px;
     color: #663043;
   }
   
- 
-  
-
- /* page-container position and min-height styling  */
+ /* page-container position styling  */
 .page-container {
-  position: absolute;
-  min-height: 100vh;
-  min-width: 100%;
-}
-
-.profile-menu{
-  padding-left: 500px;
+  position: relative;
 }

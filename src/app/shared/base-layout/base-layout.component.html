@@ -13,14 +13,15 @@
       <mat-toolbar>
         <!-- navbar container -->
         <div class="navbar-container">
-          <!-- logo -->
           <button class="navbar-link" routerLink="/home" mat-button> NodeBucket</button>
-
           <button class="navbar-link" routerLink="/about" mat-button>About Us</button>
           <button class="navbar-link" routerLink="/contact" mat-button>Contact</button>
         </div>
+          <!-- spacing between navbar-link and profileMenu -->
+        <div fxFlex></div>
+
         <!-- Add a Sign-Out profile menu -->
-        <div class="profile-menu" *ngIf="isLoggedIn">
+        <div *ngIf="isLoggedIn">
           <button mat-icon-button [matMenuTriggerFor]="profileMenu" aria-label="user profile menu">
             <mat-icon>perm_identity</mat-icon>
           </button>
@@ -36,24 +37,25 @@
         </div>
       </mat-toolbar>
     </nav>
-  
-    <!-- main content -->
-    <div fxFlex>
-      <main class="main-content" fxFlex="100%;">
-        <router-outlet></router-outlet>
-      </main>
-    </div>
-    <br />
-    <!-- footer -->
-    <div fxFlex>
-      <footer class="footer">
-        <mat-toolbar class="footer-content">
-          <p>
-            &copy; {{year | date: 'yyyy'}} - nodebucket - <a href="https://www.MJT Web Technology.com/" class="bu-link" target="_blank">MJT Web Technology</a>
-          </p>
-        </mat-toolbar>
-      </footer>
-    </div>
+
+        <!-- main content -->
+        <div fxFlex>
+          <main class="main-content" fxFlex="100%;">
+            <router-outlet></router-outlet>
+          </main>
+        </div>
+        <br />
+        <!-- footer -->
+        <div fxFlex>
+          <footer class="footer">
+            <mat-toolbar class="footer-content">
+              <p>
+                &copy; {{year | date: 'yyyy'}} - nodebucket - <a href="https://www.MJT Web Technology.com/" class="bu-link" target="_blank">MJT Web Technology</a>
+              </p>
+            </mat-toolbar>
+          </footer>
+        </div>
+
   
 </div>
   
